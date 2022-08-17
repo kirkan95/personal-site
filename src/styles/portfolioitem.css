@@ -1,0 +1,28 @@
+.card-container {
+  border-radius: 10px;
+  max-width: 30%;
+  padding: 1rem;
+  background-color: #575a4b;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    width: 98%;
+  }
+}
+
+.title a {
+  color: #b6cca1;
+}
+
+.title a:hover {
+  color: #d7fcd4;
+}
+
+.title a[tabindex]:focus {
+  color: #d7fcd4;
+}
+
+.info-box {
+  color: #d7fcd4;
+}

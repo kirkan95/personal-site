@@ -1,0 +1,37 @@
+.contact-container {
+  background-color: #d0d38f;
+  height: 100vh;
+}
+
+.contact-title h1 {
+  margin-top: 0rem;
+}
+
+.contact-title {
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.contact-options-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.container-option {
+  width: 15%;
+  text-align: center;
+  border: 1px solid #575a4b;
+  border-radius: 10px;
+  padding-top: 1rem;
+  background-color: #d0d38f;
+}
+
+.container-option a {
+  color: #575a4b;
+}
+
+.container-option a:hover {
+  color: #9cafb7;
+}

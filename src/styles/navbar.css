@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+.navbar {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: Quicksand;
+  background-color: #575a4b;
+  color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .Link:visited {
+  color: white;
+}
