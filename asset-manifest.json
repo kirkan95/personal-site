@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/kirkan95/personal-site/static/css/main.0e374d0f.css",
+    "main.js": "/kirkan95/personal-site/static/js/main.10be770e.js",
+    "static/js/787.3ba5e41c.chunk.js": "/kirkan95/personal-site/static/js/787.3ba5e41c.chunk.js",
+    "static/media/cropped-profile-pic.png": "/kirkan95/personal-site/static/media/cropped-profile-pic.232160ce34292040c677.png",
+    "static/media/astroworld.png": "/kirkan95/personal-site/static/media/astroworld.5cdbd41339f5add91df3.png",
+    "static/media/fake-viz.png": "/kirkan95/personal-site/static/media/fake-viz.7523883f421b6e5c385b.png",
+    "static/media/usa-outline.png": "/kirkan95/personal-site/static/media/usa-outline.c6a3cc9c26df914f963a.png",
+    "static/media/logo.svg": "/kirkan95/personal-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/kirkan95/personal-site/index.html",
+    "main.0e374d0f.css.map": "/kirkan95/personal-site/static/css/main.0e374d0f.css.map",
+    "main.10be770e.js.map": "/kirkan95/personal-site/static/js/main.10be770e.js.map",
+    "787.3ba5e41c.chunk.js.map": "/kirkan95/personal-site/static/js/787.3ba5e41c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e374d0f.css",
+    "static/js/main.10be770e.js"
+  ]
+}
