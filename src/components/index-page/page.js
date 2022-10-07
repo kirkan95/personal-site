@@ -61,7 +61,8 @@ export default function Page() {
         </NavLink>
       </div>
       <Routes>
-        <Route index element={<Aboutpage />} />
+        {/* <Route index element={<Aboutpage />} /> */}
+        <Route path="/" element={<Aboutpage />} />
         <Route path="/about" element={<Aboutpage />} />
         <Route path="/portfolio" element={<Portfoliopage />} />
         <Route path="/contact" element={<Contactpage />} />
