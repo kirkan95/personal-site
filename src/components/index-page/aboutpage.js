@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "../../styles/homepage.css";
-import profilepic from "../images/cropped-profile-pic.png";
+import profilepic from "../images/cropped-profile-pic-compressed.jpeg";
 import map from "../images/usa-outline.png";
 import parallaxviz from "../images/fake-viz.png";
 
