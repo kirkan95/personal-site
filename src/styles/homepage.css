@@ -111,6 +111,13 @@
   border-top: 10px dashed #d1c2c3a0;
 }
 
+@media screen and (max-width: 1145px) {
+  .my-story-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .journalism-to-programming-container {
   max-width: 50rem;
   margin-left: auto;
@@ -219,6 +226,41 @@
   left: 45%;
 }
 
+@media screen and (max-width: 464px) {
+  .il-blip {
+    top: 32%;
+  }
+  .va-blip {
+    top: 35%;
+  }
+  .pa-blip {
+    top: 32%;
+  }
+  .tx-blip {
+    top: 55%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .il-blip {
+    top: 26%;
+  }
+  .va-blip {
+    top: 27%;
+  }
+  .pa-blip {
+    top: 25%;
+  }
+  .tx-blip {
+    top: 45%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .va-blip {
+    top: 23%;
+  }
+}
 .swing-in-top-fwd {
   -webkit-animation: swing-in-top-fwd 25s
     cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s both;
