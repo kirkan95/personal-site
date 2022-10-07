@@ -1,23 +1,34 @@
 import React from "react";
 import { Parallax } from "react-parallax";
+import { NavLink } from "react-router-dom";
 import "../../styles/homepage.css";
 import profilepic from "../images/cropped-profile-pic-compressed.jpeg";
 import map from "../images/usa-outline.png";
-import parallaxviz from "../images/fake-viz.png";
+import houstonimg from "../images/houston.jpeg";
 
-const currentRole = "data visualization developer at the Houston Chronicle";
-const currentTasks =
-  "make interactive news apps for our newsroom, which includes frontend and backend engineering";
+const CURRENT_ROLE = "data visualization developer at the Houston Chronicle";
+const CURRENT_TASKS =
+  "make interactive news apps for our newsroom, do frontend engineering and make custom visualizations";
+
+let portfolioActiveStyle = {
+  color: "#B6CCA1",
+  textDecoration: "none",
+};
+
+let contactActiveStyle = {
+  color: "#D0D38F",
+  textDecoration: "none",
+};
 
 const Aboutpage = () => {
   return (
     <div className="home-container">
       <div className="top-container-with-bg">
         <Parallax
-          blur={5}
-          bgImage={parallaxviz}
+          blur={8}
+          bgImage={houstonimg}
           bgImageAlt="the cat"
-          strength={200}
+          strength={300}
         >
           <div className="top-flexbox">
             <div className="image-container fade-in">
@@ -32,14 +43,60 @@ const Aboutpage = () => {
               <h1 className="welcome ">welcome!</h1>
               <div className="main-message-container">
                 <h2 className="main-message">
-                  I'm Kirk, currently a {currentRole}. I {currentTasks}.
+                  I'm Kirk, currently a {CURRENT_ROLE}. I {CURRENT_TASKS}.
                 </h2>
                 <p>
-                  Scroll to learn more about me, or see my work and how to get
-                  in contact above.
+                  Scroll to learn more about me, or{" "}
+                  <NavLink
+                    to="/portfolio"
+                    style={({ isActive }) =>
+                      isActive
+                        ? portfolioActiveStyle
+                        : {
+                            color: "#2E294E",
+                            textDecoration: "none",
+                            fontWeight: "bold",
+                          }
+                    }
+                  >
+                    see my work
+                  </NavLink>{" "}
+                  or learn how to{" "}
+                  <NavLink
+                    to="/contact"
+                    style={({ isActive }) =>
+                      isActive
+                        ? contactActiveStyle
+                        : {
+                            color: "#2E294E",
+                            textDecoration: "none",
+                            fontWeight: "bold",
+                          }
+                    }
+                  >
+                    get in contact
+                  </NavLink>
+                  .
                 </p>
               </div>
             </div>
+          </div>
+          <div className="chevron">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="chevron-bounce"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#fff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
           </div>
         </Parallax>
       </div>
@@ -77,7 +134,11 @@ const Aboutpage = () => {
                 hats.
               </p>
               <p>
-                we broke some big stories from our little campus in Illinois.
+                we broke some{" "}
+                <a href="https://www.washingtonpost.com/news/acts-of-faith/wp/2016/01/05/wheaton-is-planning-to-fire-professor-who-said-muslims-and-christians-worship-the-same-god/">
+                  big stories
+                </a>{" "}
+                from our little campus in Illinois.
               </p>
             </div>
           </div>

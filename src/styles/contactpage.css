@@ -1,6 +1,8 @@
 .contact-container {
   background-color: #d0d38f;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .contact-title h1 {
@@ -14,18 +16,30 @@
 
 .contact-options-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
   margin-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 .container-option {
-  width: 15%;
+  min-width: 15%;
   text-align: center;
   border: 1px solid #575a4b;
   border-radius: 10px;
   padding-top: 1rem;
   background-color: #d0d38f;
+}
+
+@media screen and (max-width: 700px) {
+  .container-option {
+    min-width: 98%;
+  }
+  .contact-options-container {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
 }
 
 .container-option a {

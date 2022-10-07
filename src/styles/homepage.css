@@ -1,6 +1,3 @@
-.home-container {
-}
-
 .top-container-with-bg {
   background-color: #a89b9d;
   border-bottom: 10px dashed #857b7c;
@@ -12,7 +9,7 @@
   gap: 2rem;
   justify-content: center;
   padding-top: 5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
 }
 
 .message-container {
@@ -20,13 +17,21 @@
   width: 50rem;
 }
 
+@media screen and (max-width: 1231px) {
+  .message-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+}
+
 .main-message-container {
   color: #2a2c24;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(207, 207, 234, 0.4);
+  background-color: rgba(207, 207, 234, 0.6);
   border-radius: 20px;
 }
 
@@ -60,6 +65,45 @@
   border-radius: 50%;
   margin: auto;
   position: relative;
+}
+
+.chevron {
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.chevron-bounce {
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 1rem, 0);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 200px, 0);
+    transform: translate3d(0, 1rem, 0);
+  }
 }
 
 .my-story-container {

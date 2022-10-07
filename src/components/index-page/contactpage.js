@@ -6,7 +6,7 @@ const Contactpage = () => {
     <div className="contact-container">
       <div className="contact-title">
         <h1>want to get in touch with me?</h1>
-        <p>I'd love to chat. Shoot me a message!</p>
+        <p>I'd love to chat about my experience. Shoot me a message!</p>
       </div>
       <div className="contact-options-container">
         <button className="email container-option">
