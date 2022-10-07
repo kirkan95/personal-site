@@ -62,6 +62,7 @@ export default function App() {
       </div>
       <Routes>
         <Route index element={<Aboutpage />} />
+        <Route path="/personal-site" element={<Aboutpage />} />
         <Route path="/about" element={<Aboutpage />} />
         <Route path="/portfolio" element={<Portfoliopage />} />
         <Route path="/contact" element={<Contactpage />} />
